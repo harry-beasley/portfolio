@@ -2,31 +2,46 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-header {
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.sidebar {
+  width: 300px;
+  padding: 20px;
   background-color: #f4f4f4;
-  color: #333;
-  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+header h1, .sidebar h1 {
   text-align: center;
-}
-
-h1 {
-  margin: 10px 0;
-}
-
-img {
-  margin-top: 20px;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 10px;
+  margin: 10px 0;
 }
 
 nav ul li a {
@@ -39,15 +54,13 @@ nav ul li a:hover {
 }
 
 section {
-  margin: 20px;
-  padding: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 section h2 {
-  text-align: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 ul {
