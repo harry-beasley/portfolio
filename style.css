@@ -81,17 +81,17 @@ ul li {
   margin: 20px 0;
 }
 
-ul li h3 a {
+ul li h3 {
   color: #2c3e50;
-  text-decoration: none;
-}
-
-ul li h3 a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 ul li p {
   margin: 10px 0;
+}
+
+ul li strong {
+  color: #2c3e50;
 }
 
 a {
@@ -102,4 +102,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
