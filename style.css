@@ -42,6 +42,7 @@ section {
   margin: 20px auto;
   padding: 20px;
   max-width: 800px;
+  text-align: left; /* Ensure text is left-aligned with proper margins */
 }
 
 section h2 {
