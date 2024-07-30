@@ -6,7 +6,7 @@ I'm Harry Beasley, a recent graduate with a Master's in Business Analytics from 
 
 ## Contact
 
-feel free to reach out to me via:
+Feel free to reach out to me via:
 - [LinkedIn](https://www.linkedin.com/in/harrybeasley)
 - harrybeasley@gmail.com
 
