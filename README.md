@@ -50,6 +50,6 @@ A group project focused on building a machine learning model to forecast invento
 ## Contact
 
 For inquiries or collaboration opportunities, feel free to reach out to me via:
-[LinkedIn](https://www.linkedin.com/in/harrybeasley)
-[email](harrybeasley@gmail.com)
-[Text](631-538-9877)
+- [LinkedIn](https://www.linkedin.com/in/harrybeasley)
+- [email](harrybeasley@gmail.com)
+- [Text](631-538-9877)
