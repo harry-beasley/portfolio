@@ -2,9 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f4f4f4;
   display: flex;
   justify-content: center;
-  background-color: #f4f4f4;
 }
 
 .container {
@@ -13,6 +13,7 @@ body {
   width: 100%;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px; /* Adds margin around the container */
 }
 
 .sidebar {
@@ -69,35 +70,3 @@ section h2 {
   border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
   margin-bottom: 20px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 20px 0;
-}
-
-ul li h3 a {
-  color: #2c3e50;
-  text-decoration: none;
-}
-
-ul li h3 a:hover {
-  text-decoration: underline;
-}
-
-ul li p {
-  margin: 10px 0;
-}
-
-a {
-  color: #1abc9c;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
