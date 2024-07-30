@@ -2,7 +2,13 @@
 
 ## About Me
 
-Hi, I'm Harry Beasley, a recent graduate with a Master's in Business Analytics from Adelphi University. I have a passion for using data to derive insights and inform decision-making processes. With hands-on experience in machine learning, data visualization, and analytics, I bring strong analytical and problem-solving skills to the table. My background includes roles as a Graduate Assistant Data Analyst and a professional soccer player, which have equipped me with excellent teamwork and leadership abilities.
+I'm Harry Beasley, a recent graduate with a Master's in Business Analytics from Adelphi University. I have a passion for using data to derive insights and inform decision-making processes. With hands-on experience in machine learning, data visualization, and analytics, I bring strong analytical and problem-solving skills to the table. My background includes roles as a Graduate Assistant Data Analyst and a professional soccer player, which have equipped me with excellent teamwork and leadership abilities.
+
+## Contact
+
+feel free to reach out to me via:
+- [LinkedIn](https://www.linkedin.com/in/harrybeasley)
+- harrybeasley@gmail.com
 
 ## Skills
 
@@ -47,9 +53,3 @@ A group project focused on building a machine learning model to forecast invento
 
 [Project Files and Code](https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting)
 
-## Contact
-
-For inquiries or collaboration opportunities, feel free to reach out to me via:
-- [LinkedIn](https://www.linkedin.com/in/harrybeasley)
-- [email](harrybeasley@gmail.com)
-- [Text](631-538-9877)
