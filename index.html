@@ -22,6 +22,9 @@
     p, li {
       font-size: 14px; /* Reduced font size */
     }
+    a.bold-link {
+      font-weight: bold; /* Make links bold */
+    }
   </style>
 </head>
 <body>
@@ -60,7 +63,7 @@
               <li><strong>Unsupervised Learning with Latent Dirichlet Allocation (LDA):</strong> Created a dictionary of words using gensim, applied LDA to discover representative topics in the earnings call transcripts, and visualized these topics with word clouds. Compared topic distributions for ARKK and non-ARKK stocks, identifying distinctive themes and business models associated with each group.</li>
               <li><strong>Outcome Analysis:</strong> The project provided a comprehensive understanding of the factors influencing stock performance within the ARKK ETF and identified potential candidates for inclusion based on sentiment and topic analysis.</li>
             </ul>
-            <a href="https://github.com/harry-beasley/portfolio/tree/main/analysis_of_earnings_calls/analysis_of_earnings_calls.html">Project Files and Code</a>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/analysis_of_earnings_calls/analysis_of_earnings_calls.html">Project Files and Code</a>
           </li>
           <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
           <li>
@@ -74,7 +77,7 @@
               <li><strong>Database Management:</strong> Leveraged MongoDB for storing the ETF holdings data. Created a connection to the MongoDB cluster, structured the data into a hierarchical format suitable for MongoDB, and inserted the data into the database. Indexes were created to optimize query performance.</li>
               <li><strong>Preparation for Analysis:</strong> Ensured the dataset was ready for analysis by performing extensive data validation and cleaning. This included verifying the completeness of the data, removing duplicates, and ensuring accurate mapping of ETF tickers to their respective holdings.</li>
             </ul>
-            <a href="https://github.com/harry-beasley/portfolio/tree/main/etf_recommender_project/etf_recommender_project_part1.html">Project Files and Code</a>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/etf_recommender_project/etf_recommender_project_part1.html">Project Files and Code</a>
           </li>
           <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
           <li>
@@ -88,7 +91,7 @@
               <li><strong>Feature Engineering and Clustering:</strong> Retrieved stock characteristics from Finviz.com using BeautifulSoup for web scraping. The data underwent extensive feature engineering, including normalization, handling missing values, and clipping outliers. KMeans clustering from scikit-learn was then applied to categorize stocks based on financial metrics, identifying clusters of similar stocks.</li>
               <li><strong>Cluster-Based ETF Recommendations:</strong> Analyzed the distribution of ETF holdings within clusters to recommend ETFs with similar stock compositions. This involved visualizing cluster distributions using libraries like matplotlib and seaborn, and computing cosine similarities between ETFs based on their cluster distributions. For example, ARKK was found to be most similar to XT and JGLO based on cluster analysis, facilitating better investment decisions.</li>
             </ul>
-            <a href="https://github.com/harry-beasley/portfolio/tree/main/etf_recommender_project/etf_recommender_project_part2.html">Project Files and Code</a>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/etf_recommender_project/etf_recommender_project_part2.html">Project Files and Code</a>
           </li>
           <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
           <li>
@@ -102,7 +105,7 @@
               <li><strong>Pipeline Creation:</strong> Developed a pipeline to streamline preprocessing and model application, ensuring seamless handling of testing data.</li>
               <li><strong>Model Optimization:</strong> Explored hyperparameter tuning and feature selection/creation to enhance the performance of the Decision Tree algorithm, aiming to improve precision for smaller sample classifications.</li>
             </ul>
-            <a href="https://github.com/harry-beasley/portfolio/tree/main/multi-class-prediction-obesity-risk">Project Files and Code</a>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/multi-class-prediction-obesity-risk">Project Files and Code</a>
           </li>
           <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
           <li>
@@ -116,7 +119,7 @@
               <li><strong>Feature Engineering and Selection:</strong> Created new features such as angular encoding for temporal features and applied scaling and one-hot encoding through a pipeline. Dropped redundant features to enhance model performance.</li>
               <li><strong>Model Prediction and Aggregation:</strong> Used the final XGBoost model to predict demand and adjusted inventory levels. Aggregated data to predict weekly inventory for each store-product combination, ensuring the model's RMSE was within acceptable limits.</li>
             </ul>
-            <a href="https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting">Project Files and Code</a>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting">Project Files and Code</a>
           </li>
         </ul>
       </section>
