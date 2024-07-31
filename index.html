@@ -5,7 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Harry Beasley</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap">
+  <style>
+    body {
+      font-size: 14px; /* Reduced by 2pt */
+    }
+    h1 {
+      font-size: 22px; /* Reduced by 2pt */
+    }
+    h2 {
+      font-size: 18px; /* Reduced by 2pt */
+    }
+    h3 {
+      font-size: 16px; /* Reduced by 2pt */
+    }
+    p, li {
+      font-size: 14px; /* Reduced by 2pt */
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -33,7 +50,50 @@
         <h2>My Projects</h2>
         <ul>
           <li>
+            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/analysis-of-earnings-calls" style="color: inherit; text-decoration: none;"><strong>Analysis of Earnings Calls: Unveiling Insights and Categorizing Stocks in the ARKK ETF</strong></a></h3>
+            <p>NLP, Supervised & Unsupervised Learning</p>
+            <p>This project leverages automation and natural language processing (NLP) techniques to analyze earnings call transcripts of various companies. The analysis aims to categorize stocks within the ARKK ETF and uncover meaningful topics discussed during earnings calls, providing valuable insights for informed investment decisions.</p>
+            <ul>
+              <li><strong>Web Mining for Earnings Call URLs using Selenium:</strong> Utilized Selenium to programmatically navigate to the earnings call sections of Seeking Alpha for a comprehensive list of stock tickers from selected ETFs. Constructed URLs for each ticker's earnings call page, extracted the first earnings call URL listed, and stored the ticker symbol and corresponding earnings call URL in a MongoDB collection.</li>
+              <li><strong>Extract, Transform, Load (ETL) and Natural Language Processing (NLP):</strong> Retrieved earnings call transcripts using BeautifulSoup and Selenium. Preprocessed the text data by removing punctuation, converting text to lowercase, and tokenizing the documents. Applied part-of-speech tagging using spaCy, filtered relevant words, removed stop words, and performed lemmatization. Converted the textual data into TF-IDF features using TfidfVectorizer from sklearn.</li>
+              <li><strong>Supervised Learning with Logistic Regression:</strong> Paired the TF-IDF matrix with a target variable indicating inclusion in the ARKK ETF. Trained a Logistic Regression model using cross-validation, analyzed the coefficients to identify significant words, and generated word clouds for positive and negative coefficients. Recommended stocks for the ARKK ETF based on predicted probabilities and constructed a narrative highlighting the importance of key terms.</li>
+              <li><strong>Unsupervised Learning with Latent Dirichlet Allocation (LDA):</strong> Created a dictionary of words using gensim, applied LDA to discover representative topics in the earnings call transcripts, and visualized these topics with word clouds. Compared topic distributions for ARKK and non-ARKK stocks, identifying distinctive themes and business models associated with each group.</li>
+              <li><strong>Outcome and Insights:</strong> The project successfully automated data collection, processed textual data to identify significant tokens, and provided insights into the sentiments and topics prevalent in earnings calls. This comprehensive analysis empowered investors with valuable information for making informed decisions about stock inclusion in the ARKK ETF.</li>
+            </ul>
+            <a href="https://github.com/harry-beasley/portfolio/tree/main/analysis-of-earnings-calls">Project Files and Code</a>
+          </li>
+          <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
+          <li>
+            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/etf-recommender-project-part-1" style="color: inherit; text-decoration: none;"><strong>ETF Recommender Project - Part 1</strong></a></h3>
+            <p>Data Extraction, Data Transformation</p>
+            <p>This project involves creating an ETF recommender system by extracting, transforming, and loading data from various web sources for ETF holdings. The project focuses on obtaining data from iShares, Invesco, and StockAnalysis to build a comprehensive dataset for further analysis and recommendations.</p>
+            <ul>
+              <li><strong>Web Mining:</strong> Utilized BeautifulSoup and requests libraries to scrape ETF data from iShares, Invesco, and StockAnalysis websites. This involved parsing HTML content to extract relevant data, handling HTTP requests, and managing user-agent headers to avoid blocking.</li>
+              <li><strong>Data Collection and Integration:</strong> Extracted ETF tickers and their holdings from iShares using custom functions to map tickers to their corresponding URLs, and then downloaded and processed the holdings data. For Invesco and StockAnalysis, similar scraping techniques were employed to gather the necessary data.</li>
+              <li><strong>Data Transformation:</strong> Standardized the collected data by cleaning and reformatting it to ensure consistency. This included handling missing values, converting data types, and aligning the columns from different sources into a uniform structure.</li>
+              <li><strong>Database Management:</strong> Leveraged MongoDB for storing the ETF holdings data. Created a connection to the MongoDB cluster, structured the data into a hierarchical format suitable for MongoDB, and inserted the data into the database. Indexes were created to optimize query performance.</li>
+              <li><strong>Preparation for Analysis:</strong> Ensured the dataset was ready for analysis by performing extensive data validation and cleaning. This included verifying the completeness of the data, removing duplicates, and ensuring accurate mapping of ETF tickers to their respective holdings.</li>
+            </ul>
+            <a href="https://github.com/harry-beasley/portfolio/tree/main/etf-recommender-project-part-1">Project Files and Code</a>
+          </li>
+          <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
+          <li>
+            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/etf-recommender-project-part-2" style="color: inherit; text-decoration: none;"><strong>ETF Recommender Project - Part 2</strong></a></h3>
+            <p>Clustering, Association Rule Mining</p>
+            <p>The second part of the ETF Recommender Project focuses on analyzing the ETF data to identify similar ETFs, extract additional relevant data such as expense ratios, and recommend new investment ideas using clustering and association rule mining techniques.</p>
+            <ul>
+              <li><strong>Similarity Analysis:</strong> Utilized Python libraries like SciPy and pandas to calculate Jaccard and cosine similarities between ETFs. For instance, the cosine similarity between QQQ and QQQM was found to be 1.0, indicating identical holdings. The analysis involved creating a normalized data matrix and computing pairwise similarity metrics.</li>
+              <li><strong>Expense Ratio Extraction:</strong> Employed Selenium for automated web scraping to gather expense ratios from stockanalysis.com. This involved configuring a headless Chrome browser, navigating through multiple pages, and extracting tabular data. The extracted data was then cleaned and integrated into the dataset.</li>
+              <li><strong>Apriori Algorithm for Association Rules:</strong> Leveraged the apriori algorithm from the apyori library to identify strong association rules among stocks within ETFs. This process involved creating a list of transactions representing ETF holdings and running the apriori algorithm to discover frequent itemsets and generate association rules, such as ETFs holding AAPL are also likely to hold MSFT, NVDA, and META.</li>
+              <li><strong>Feature Engineering and Clustering:</strong> Retrieved stock characteristics from Finviz.com using BeautifulSoup for web scraping. The data underwent extensive feature engineering, including normalization, handling missing values, and clipping outliers. KMeans clustering from scikit-learn was then applied to categorize stocks based on financial metrics, identifying clusters of similar stocks.</li>
+              <li><strong>Cluster-Based ETF Recommendations:</strong> Analyzed the distribution of ETF holdings within clusters to recommend ETFs with similar stock compositions. This involved visualizing cluster distributions using libraries like matplotlib and seaborn, and computing cosine similarities between ETFs based on their cluster distributions. For example, ARKK was found to be most similar to XT and JGLO based on cluster analysis, facilitating better investment decisions.</li>
+            </ul>
+            <a href="https://github.com/harry-beasley/portfolio/tree/main/etf-recommender-project-part-2">Project Files and Code</a>
+          </li>
+          <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
+          <li>
             <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/multi-class-prediction-obesity-risk" style="color: inherit; text-decoration: none;"><strong>Multi-Class Prediction of Obesity Risk</strong></a></h3>
+            <p>Classification</p>
             <p>This project involves building a multi-class prediction model to assess obesity risk based on various health and demographic factors.</p>
             <ul>
               <li><strong>Data Preprocessing:</strong> Applied standard scaling and median imputation for numerical columns to handle missing values and ensure balanced feature contribution. Categorical columns were processed using constant imputation and OneHotEncoding.</li>
@@ -47,6 +107,7 @@
           <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
           <li>
             <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting" style="color: inherit; text-decoration: none;"><strong>Grocery Store Demand Forecasting</strong></a></h3>
+            <p>Regression</p>
             <p>This group project involved building a machine learning model to forecast inventory levels for a grocery store.</p>
             <ul>
               <li><strong>Data Collection and Integration:</strong> Downloaded and merged datasets for sales, stores, and products. Conducted feature engineering by creating new temporal features and converting categorical variables.</li>
@@ -63,3 +124,4 @@
   </div>
 </body>
 </html>
+
