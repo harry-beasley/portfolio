@@ -25,7 +25,43 @@ Feel free to reach out to me via:
 
 This repository contains a selection of projects that showcase my skills and experience in data analytics. Each project includes a brief description, key aspects, and links to the project files and code.
 
-### Featured Projects
+### Projects
+
+### Analysis of Earnings Calls: Unveiling Insights and Categorizing Stocks in the ARKK ETF
+This project leverages automation and natural language processing (NLP) techniques to analyze earnings call transcripts of various companies.
+
+**Key Aspects:**
+- Web Mining: Used Selenium to extract earnings call URLs.
+- ETL and NLP: Processed transcripts using BeautifulSoup and spaCy.
+- Supervised Learning: Logistic Regression for stock categorization.
+- Unsupervised Learning: LDA for topic modeling.
+- Outcome Analysis: Identified key factors influencing stock performance.
+
+[Project Files and Code](https://github.com/harry-beasley/portfolio/tree/main/analysis_of_earnings_calls/analysis_of_earnings_calls.html)
+
+### ETF Recommender Project - Part 1
+This project involves creating an ETF recommender system by extracting, transforming, and loading data from various web sources for ETF holdings.
+
+**Key Aspects:**
+- Web Mining: Scraped ETF data using BeautifulSoup and requests.
+- Data Collection and Integration: Extracted and processed ETF holdings data.
+- Data Transformation: Standardized and cleaned the collected data.
+- Database Management: Stored data in MongoDB.
+- Preparation for Analysis: Validated and cleaned the dataset.
+
+[Project Files and Code](https://github.com/harry-beasley/portfolio/tree/main/etf_recommender_project/etf_recommender_project_part1.html)
+
+### ETF Recommender Project - Part 2
+The second part focuses on analyzing the ETF data to identify similar ETFs and recommend new investment ideas using clustering and association rule mining techniques.
+
+**Key Aspects:**
+- Similarity Analysis: Calculated Jaccard and cosine similarities between ETFs.
+- Expense Ratio Extraction: Gathered data using Selenium.
+- Apriori Algorithm: Identified strong association rules among stocks.
+- Feature Engineering and Clustering: Applied KMeans clustering to categorize stocks.
+- Cluster-Based Recommendations: Recommended ETFs based on cluster analysis.
+
+[Project Files and Code](https://github.com/harry-beasley/portfolio/tree/main/etf_recommender_project/etf_recommender_project_part2.html)
 
 #### Multi-Class Prediction of Obesity Risk
 
