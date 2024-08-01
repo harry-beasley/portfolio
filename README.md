@@ -13,7 +13,7 @@ Feel free to reach out to me via:
 ## Skills
 
 **Programming:**
-- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Plotly, Beautiful Soup, NLTK)
+- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Plotly, Beautiful Soup, NLTK, spaCy, requests)
 
 **Databases:**
 - SQL, NoSQL (MongoDB)
