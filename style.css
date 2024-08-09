@@ -74,6 +74,12 @@ section {
   color: #fff; /* Keeps 'About Me' in white */
 }
 
+.main-content section#projects h2 {
+  border-bottom: 2px solid #ccc; /* Adds the line under 'My Projects' */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -86,6 +92,7 @@ ul li {
 ul li h3 {
   color: #222; /* Slightly darker for headings */
   font-weight: bold;
+  font-size: 24px; /* Ensure consistent font size for all project titles */
 }
 
 ul li p {
