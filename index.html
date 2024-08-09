@@ -6,6 +6,27 @@
   <title>Portfolio - Harry Beasley</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;600&display=swap">
+  <style>
+    body {
+      font-size: 14px; 
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    p, li {
+      font-size: 14px; 
+    }
+    a.bold-link {
+      font-weight: bold; 
+      font-size: 16px; 
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -33,17 +54,31 @@
         <h2>My Projects</h2>
         <ul>
           <li>
-            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/analysis_of_earnings_calls" style="color: inherit; text-decoration: none;"><strong>Analysis of Earnings Calls: Unveiling Insights and Categorizing Stocks in the ARKK ETF</strong></a></h3>
-            <p><strong>(NLP, Supervised & Unsupervised Learning)</strong></p>
-            <p>This project leverages automation and natural language processing (NLP) techniques to analyze earnings call transcripts of various companies. The analysis aims to categorize stocks within the ARKK ETF and uncover meaningful topics discussed during earnings calls, providing valuable insights for informed investment decisions.</p>
+            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/multi-class-prediction-obesity-risk" class="bold-link"><strong>Multi-Class Prediction of Obesity Risk</strong></a></h3>
+            <p><strong>(Classification)</strong></p>
+            <p>This project involves building a multi-class prediction model to assess obesity risk based on various health and demographic factors.</p>
             <ul>
-              <li><strong>Web Mining for Earnings Call URLs using Selenium:</strong> Utilized Selenium to programmatically navigate to the earnings call sections of Seeking Alpha for a comprehensive list of stock tickers from selected ETFs. Constructed URLs for each ticker's earnings call page, extracted the first earnings call URL listed, and stored the ticker symbol and corresponding earnings call URL in a MongoDB collection.</li>
-              <li><strong>Extract, Transform, Load (ETL) and Natural Language Processing (NLP):</strong> Retrieved earnings call transcripts using BeautifulSoup and Selenium. Preprocessed the text data by removing punctuation, converting text to lowercase, and tokenizing the documents. Applied part-of-speech tagging using spaCy, filtered relevant words, removed stop words, and performed lemmatization. Converted the textual data into TF-IDF features using TfidfVectorizer from sklearn.</li>
-              <li><strong>Supervised Learning with Logistic Regression:</strong> Paired the TF-IDF matrix with a target variable indicating inclusion in the ARKK ETF. Trained a Logistic Regression model using cross-validation, analyzed the coefficients to identify significant words, and generated word clouds for positive and negative coefficients. Recommended stocks for the ARKK ETF based on predicted probabilities and constructed a narrative highlighting the importance of key terms.</li>
-              <li><strong>Unsupervised Learning with Latent Dirichlet Allocation (LDA):</strong> Created a dictionary of words using gensim, applied LDA to discover representative topics in the earnings call transcripts, and visualized these topics with word clouds. Compared topic distributions for ARKK and non-ARKK stocks, identifying distinctive themes and business models associated with each group.</li>
-              <li><strong>Outcome Analysis:</strong> The project provided a comprehensive understanding of the factors influencing stock performance within the ARKK ETF and identified potential candidates for inclusion based on sentiment and topic analysis.</li>
+              <li><strong>Data Preprocessing:</strong> Applied standard scaling and median imputation for numerical columns to handle missing values and ensure balanced feature contribution. Categorical columns were processed using constant imputation and OneHotEncoding.</li>
+              <li><strong>Feature Engineering:</strong> Implemented feature engineering techniques to standardize numerical features and encode categorical features, facilitating their use in the machine learning models.</li>
+              <li><strong>Model Selection:</strong> Utilized Gradient Boosting and Decision Tree algorithms to capture non-linear relationships and compare their capabilities in predicting obesity risk levels.</li>
+              <li><strong>Pipeline Creation:</strong> Developed a pipeline to streamline preprocessing and model application, ensuring seamless handling of testing data.</li>
+              <li><strong>Model Optimization:</strong> Explored hyperparameter tuning and feature selection/creation to enhance the performance of the Decision Tree algorithm, aiming to improve precision for smaller sample classifications.</li>
             </ul>
-            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/analysis_of_earnings_calls"><strong>Project Files and Code</strong></a>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/multi-class-prediction-obesity-risk"><strong>Project Files and Code</strong></a>
+          </li>
+          <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
+          <li>
+            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting" class="bold-link"><strong>Grocery Store Demand Forecasting</strong></a></h3>
+            <p><strong>(Regression)</strong></p>
+            <p>This group project involved building a machine learning model to forecast inventory levels for a grocery store.</p>
+            <ul>
+              <li><strong>Data Collection and Integration:</strong> Downloaded and merged datasets for sales, stores, and products. Conducted feature engineering by creating new temporal features and converting categorical variables.</li>
+              <li><strong>Exploratory Data Analysis (EDA):</strong> Performed thorough EDA to identify trends, patterns, and anomalies. Generated histograms and line plots to visualize sales data across different dimensions such as product name, product category, store number, and date.</li>
+              <li><strong>Model Development and Evaluation:</strong> Developed and fine-tuned multiple machine learning models including Linear Regression, Random Forest, and XGBoost. Evaluated model performance using metrics like R-squared, MAE, MSE, and RMSE to select the best model.</li>
+              <li><strong>Feature Engineering and Selection:</strong> Created new features such as angular encoding for temporal features and applied scaling and one-hot encoding through a pipeline. Dropped redundant features to enhance model performance.</li>
+              <li><strong>Model Prediction and Aggregation:</strong> Used the final XGBoost model to predict demand and adjusted inventory levels. Aggregated data to predict weekly inventory for each store-product combination, ensuring the model's RMSE was within acceptable limits.</li>
+            </ul>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting"><strong>Project Files and Code</strong></a>
           </li>
           <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
           <li>
@@ -75,31 +110,17 @@
           </li>
           <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
           <li>
-            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/multi-class-prediction-obesity-risk" class="bold-link"><strong>Multi-Class Prediction of Obesity Risk</strong></a></h3>
-            <p><strong>(Classification)</strong></p>
-            <p>This project involves building a multi-class prediction model to assess obesity risk based on various health and demographic factors.</p>
+            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/analysis_of_earnings_calls" class="bold-link"><strong>Analysis of Earnings Calls: Unveiling Insights and Categorizing Stocks in the ARKK ETF</strong></a></h3>
+            <p><strong>(NLP, Supervised & Unsupervised Learning)</strong></p>
+            <p>This project leverages automation and natural language processing (NLP) techniques to analyze earnings call transcripts of various companies. The analysis aims to categorize stocks within the ARKK ETF and uncover meaningful topics discussed during earnings calls, providing valuable insights for informed investment decisions.</p>
             <ul>
-              <li><strong>Data Preprocessing:</strong> Applied standard scaling and median imputation for numerical columns to handle missing values and ensure balanced feature contribution. Categorical columns were processed using constant imputation and OneHotEncoding.</li>
-              <li><strong>Feature Engineering:</strong> Implemented feature engineering techniques to standardize numerical features and encode categorical features, facilitating their use in the machine learning models.</li>
-              <li><strong>Model Selection:</strong> Utilized Gradient Boosting and Decision Tree algorithms to capture non-linear relationships and compare their capabilities in predicting obesity risk levels.</li>
-              <li><strong>Pipeline Creation:</strong> Developed a pipeline to streamline preprocessing and model application, ensuring seamless handling of testing data.</li>
-              <li><strong>Model Optimization:</strong> Explored hyperparameter tuning and feature selection/creation to enhance the performance of the Decision Tree algorithm, aiming to improve precision for smaller sample classifications.</li>
+              <li><strong>Web Mining for Earnings Call URLs using Selenium:</strong> Utilized Selenium to programmatically navigate to the earnings call sections of Seeking Alpha for a comprehensive list of stock tickers from selected ETFs. Constructed URLs for each ticker's earnings call page, extracted the first earnings call URL listed, and stored the ticker symbol and corresponding earnings call URL in a MongoDB collection.</li>
+              <li><strong>Extract, Transform, Load (ETL) and Natural Language Processing (NLP):</strong> Retrieved earnings call transcripts using BeautifulSoup and Selenium. Preprocessed the text data by removing punctuation, converting text to lowercase, and tokenizing the documents. Applied part-of-speech tagging using spaCy, filtered relevant words, removed stop words, and performed lemmatization. Converted the textual data into TF-IDF features using TfidfVectorizer from sklearn.</li>
+              <li><strong>Supervised Learning with Logistic Regression:</strong> Paired the TF-IDF matrix with a target variable indicating inclusion in the ARKK ETF. Trained a Logistic Regression model using cross-validation, analyzed the coefficients to identify significant words, and generated word clouds for positive and negative coefficients. Recommended stocks for the ARKK ETF based on predicted probabilities and constructed a narrative highlighting the importance of key terms.</li>
+              <li><strong>Unsupervised Learning with Latent Dirichlet Allocation (LDA):</strong> Created a dictionary of words using gensim, applied LDA to discover representative topics in the earnings call transcripts, and visualized these topics with word clouds. Compared topic distributions for ARKK and non-ARKK stocks, identifying distinctive themes and business models associated with each group.</li>
+              <li><strong>Outcome Analysis:</strong> The project provided a comprehensive understanding of the factors influencing stock performance within the ARKK ETF and identified potential candidates for inclusion based on sentiment and topic analysis.</li>
             </ul>
-            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/multi-class-prediction-obesity-risk"><strong>Project Files and Code</strong></a>
-          </li>
-          <hr style="border: 0.5px solid #ccc; margin: 20px 0;">
-          <li>
-            <h3><a href="https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting" class="bold-link"><strong>Grocery Store Demand Forecasting</strong></a></h3>
-            <p><strong>(Regression)</strong></p>
-            <p>This group project involved building a machine learning model to forecast inventory levels for a grocery store.</p>
-            <ul>
-              <li><strong>Data Collection and Integration:</strong> Downloaded and merged datasets for sales, stores, and products. Conducted feature engineering by creating new temporal features and converting categorical variables.</li>
-              <li><strong>Exploratory Data Analysis (EDA):</strong> Performed thorough EDA to identify trends, patterns, and anomalies. Generated histograms and line plots to visualize sales data across different dimensions such as product name, product category, store number, and date.</li>
-              <li><strong>Model Development and Evaluation:</strong> Developed and fine-tuned multiple machine learning models including Linear Regression, Random Forest, and XGBoost. Evaluated model performance using metrics like R-squared, MAE, MSE, and RMSE to select the best model.</li>
-              <li><strong>Feature Engineering and Selection:</strong> Created new features such as angular encoding for temporal features and applied scaling and one-hot encoding through a pipeline. Dropped redundant features to enhance model performance.</li>
-              <li><strong>Model Prediction and Aggregation:</strong> Used the final XGBoost model to predict demand and adjusted inventory levels. Aggregated data to predict weekly inventory for each store-product combination, ensuring the model's RMSE was within acceptable limits.</li>
-            </ul>
-            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/grocery-store-inventory-forecasting"><strong>Project Files and Code</strong></a>
+            <a class="bold-link" href="https://github.com/harry-beasley/portfolio/tree/main/analysis_of_earnings_calls"><strong>Project Files and Code</strong></a>
           </li>
         </ul>
       </section>
