@@ -1,5 +1,5 @@
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -28,7 +28,6 @@ body {
   flex: 1;
   padding: 20px;
   box-sizing: border-box;
-  color: #333; /* Darker gray for better readability */
 }
 
 .sidebar img {
@@ -67,20 +66,12 @@ section {
   margin-bottom: 20px;
 }
 
-.sidebar section#about h2 {
+section h2 {
   border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  color: #fff; /* Keeps 'About Me' in white */
 }
 
-.main-content section#projects h2 {
-  border-bottom: 2px solid #ccc; /* Adds the line under 'My Projects' */
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-}
-
-/* Ensure consistent styling for all project titles */
 ul {
   list-style-type: none;
   padding: 0;
@@ -91,18 +82,8 @@ ul li {
 }
 
 ul li h3 {
-  color: #222 !important; /* Slightly darker for headings */
-  font-weight: bold !important;
-  font-size: 24px !important; /* Ensure consistent font size for all project titles */
-  margin: 0 !important; /* Consistent margin */
-}
-
-/* Ensure consistent styling for project title links */
-ul li h3 a {
-  color: inherit !important;
-  text-decoration: none !important;
-  font-size: inherit !important; /* Ensures the font size is inherited from the h3 element */
-  font-weight: inherit !important; /* Ensures the font weight is inherited */
+  color: #2c3e50;
+  font-weight: bold;
 }
 
 ul li p {
@@ -110,17 +91,14 @@ ul li p {
 }
 
 ul li strong {
-  color: #222 !important; /* Slightly darker for strong text */
+  color: #2c3e50;
 }
 
-/* Style for 'Project Files and Code' links */
-a.bold-link {
-  color: #1abc9c !important; /* Greenish/turquoise color */
-  font-weight: bold !important;
-  font-size: 16px !important;
-  text-decoration: none !important;
+a {
+  color: #1abc9c;
+  text-decoration: none;
 }
 
-a.bold-link:hover {
-  text-decoration: underline !important;
+a:hover {
+  text-decoration: underline;
 }
