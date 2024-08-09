@@ -96,12 +96,13 @@ ul li strong {
   color: #222; /* Slightly darker for strong text */
 }
 
-a {
-  color: #1abc9c;
+a.bold-link {
+  color: #1abc9c; /* Greenish shade */
+  font-weight: bold;
+  font-size: 16px;
   text-decoration: none;
 }
 
-a:hover {
+a.bold-link:hover {
   text-decoration: underline;
 }
-
