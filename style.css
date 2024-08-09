@@ -67,11 +67,11 @@ section {
   margin-bottom: 20px;
 }
 
-section h2 {
+.sidebar section#about h2 {
   border-bottom: 2px solid #ccc;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  color: #fff; 
+  color: #fff; /* Keeps 'About Me' in white */
 }
 
 ul {
@@ -104,3 +104,4 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
